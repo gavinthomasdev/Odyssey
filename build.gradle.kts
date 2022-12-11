@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("application")
 }
 
 group = "dev.gavinthomas.odyssey"
@@ -16,4 +17,8 @@ dependencies {
 
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
+}
+
+application {
+    mainClass.set("dev.gavinthomas.odyssey.Odyssey")
 }

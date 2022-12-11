@@ -1,7 +1,9 @@
 package dev.gavinthomas.odyssey;
 
-public class Main {
+public class Root {
+
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
     }
 }
