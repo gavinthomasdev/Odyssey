@@ -10,7 +10,16 @@ repositories {
     mavenCentral()
 }
 
+//repositories {
+//    flatDir {
+//        dirs("libs/**/libs")
+//    }
+//}
+
 dependencies {
+//    implementation(files("libs/terminal/libs/terminal-2.69.jar", "libs/jediterm-typeahead-2.69-SNAPSHOT.jar"))
+    implementation(files("libs/jediterm-terminal-2.69.jar"))
+    implementation("com.intellij:openapi:7.0.3")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
 }

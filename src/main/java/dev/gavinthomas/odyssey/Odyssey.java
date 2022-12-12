@@ -25,8 +25,8 @@ public class Odyssey {
 //        // f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //        f.setVisible(true);// making the frame visible
         MainFrame f = new MainFrame();
-        f.setBounds(200, 200, 400, 500);// 400 width and 500 height
-        f.setMinimumSize(new Dimension(400, 500));// 400 width and 500 height
+//        f.setBounds(200, 200, 400, 500);// 400 width and 500 height
+//        f.setMinimumSize(new Dimension(400, 500));// 400 width and 500 height
         f.setLayout(null);// using no layout managers
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);// making the frame visible
