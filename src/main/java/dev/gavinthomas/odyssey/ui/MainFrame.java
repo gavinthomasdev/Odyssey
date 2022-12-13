@@ -2,12 +2,7 @@ package dev.gavinthomas.odyssey.ui;
 
 import dev.gavinthomas.odyssey.ui.CustomSettingsProvider;
 
-import javax.swing.JFrame;
-import javax.swing.JToolBar;
-import javax.swing.JButton;
-import javax.swing.ImageIcon;
-import javax.swing.JPanel;
-import javax.swing.JScrollBar;
+import javax.swing.*;
 
 import java.awt.event.KeyEvent;
 import java.util.HashMap;
@@ -26,24 +21,35 @@ import com.jediterm.terminal.model.StyleState;
 import com.jediterm.terminal.TerminalColor;
 import com.jediterm.terminal.ui.settings.DefaultSettingsProvider;
 import com.intellij.openapi.wm.ToolWindow;
+import dev.gavinthomas.odyssey.ui.components.MenuBar;
 
 public class MainFrame extends JFrame {
 //    public static interface MainFrameComp {}
 //    private final ToolBar _toolBar;
     private JButton _toolBar_testButton;
     private JediTermWidget _terminal;
+
+    private JMenuBar _mb;
+    private MenuBar _menuBar;
+    private JInternalFrame jif;
+    private JFrame jdp;
     private TerminalPanel t2;
     public MainFrame() {
 //        this._toolBar = new ToolBar();
         this._terminal = new JediTermWidget(50, 10, new CustomSettingsProvider());
+        this.jif = new JInternalFrame("Testing", true, true, true);
+        this.jdp = new JFrame();
+        this._menuBar = new MenuBar();
+//        this._menuBar.setBounds(0, 0, 200, 100);
 //        StyleState ss = new StyleState();
 //        ss.setDefaultStyle(new TextStyle(new TerminalColor(255, 255, 255), new TerminalColor(0, 0, 0)));
 //        this.t2 = new TerminalPanel(new DefaultSettingsProvider(), new TerminalTextBuffer(50, 10, ss), ss);
+        this._mb = new JMenuBar();
         this.setUp();
     }
 
     private void setUp() {
-        this.add(_terminal);
+//        this.add(_terminal);
         this.setSize(1200, 700);
         _terminal.setVisible(true);
         _terminal.setEnabled(true);
@@ -58,6 +64,26 @@ public class MainFrame extends JFrame {
 //        _terminal.getTerminalStarter().sendString("\033[1mllllll");
         t.writeUnwrappedString("\nABC123");
         t.writeCharacters("TESTING123");
+        this.add(jif);
+        this.jif.setVisible(true);
+        this.jif.setBounds(0, 0, 200, 200);
+        this.jdp.setVisible(true);
+        this.jdp.setBounds(0, 0, 200, 200);
+        this.setJMenuBar(_menuBar);
+        _menuBar.init();
+        this.setTitle("Odyssey");
+//        _menuBar.setVisible(true);
+//        JMenu jm = new JMenu("TEST");
+//        _mb.add(jm);
+//        jm.add(new JMenuItem("abc"));
+//        _mb.setVisible(true);
+//        new JMenuItem();
+
+//        this.setJMenuBar(_menuBar);
+//        _menuBar.setVisible(true);
+//        this.revalidate();
+//        this.repaint();
+
 //        this.add(t2);
 //        t2.setVisible(true);
 //        t2.setBounds(0, 0, 1000, 500);

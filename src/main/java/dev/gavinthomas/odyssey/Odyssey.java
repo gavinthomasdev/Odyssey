@@ -1,11 +1,16 @@
 package dev.gavinthomas.odyssey;
 
+
+import com.formdev.flatlaf.FlatDarkLaf;
 import dev.gavinthomas.odyssey.ui.MainFrame;
 
 //import java.awt.event.*;
 import java.awt.Dimension;
 import javax.swing.JFrame;
+import javax.swing.UIManager;
+
 public class Odyssey {
+    private static volatile MainFrame mainFrame;
     public static void main(String[] args) {
 //        JFrame f = new JFrame();// creating instance of JFrame
 //
@@ -24,11 +29,22 @@ public class Odyssey {
 //        f.setLayout(null);// using no layout managers
 //        // f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //        f.setVisible(true);// making the frame visible
-        MainFrame f = new MainFrame();
+//        try {
+//            UIManager.setLookAndFeel(new FlatDarkLaf());
+//        } catch (Exception e) {
+//            System.err.println("Failed to init LaF");
+//        }
+
+        FlatDarkLaf.setup();
+        Odyssey.mainFrame = new MainFrame();
+        MainFrame f = Odyssey.mainFrame;
 //        f.setBounds(200, 200, 400, 500);// 400 width and 500 height
 //        f.setMinimumSize(new Dimension(400, 500));// 400 width and 500 height
         f.setLayout(null);// using no layout managers
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);// making the frame visible
+    }
+    public static MainFrame getMain() {
+        return Odyssey.mainFrame;
     }
 }
