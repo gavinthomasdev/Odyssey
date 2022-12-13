@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="887dd5af-d180-4a12-8e1f-f346678ac682" name="Changes" comment="Terminal setup.">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/MenuBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/util/FileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/Odyssey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/Odyssey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/MainFrame.java" afterDir="false" />
-    </list>
+    <list default="true" id="887dd5af-d180-4a12-8e1f-f346678ac682" name="Changes" comment="Theme setup." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670816322614</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Theme setup.">
+      <created>1670894076792</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670894076792</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +167,7 @@
     <MESSAGE value="Ignore File Config" />
     <MESSAGE value="Figuring out ui structure." />
     <MESSAGE value="Terminal setup." />
-    <option name="LAST_COMMIT_MESSAGE" value="Terminal setup." />
+    <MESSAGE value="Theme setup." />
+    <option name="LAST_COMMIT_MESSAGE" value="Theme setup." />
   </component>
 </project>
