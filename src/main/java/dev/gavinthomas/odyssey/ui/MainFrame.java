@@ -1,123 +1,131 @@
 package dev.gavinthomas.odyssey.ui;
 
-import dev.gavinthomas.odyssey.ui.CustomSettingsProvider;
-
 import javax.swing.*;
 
-import java.awt.event.KeyEvent;
+import java.awt.*;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Consumer;
 
-import com.jediterm.terminal.Terminal;
-import com.jediterm.terminal.TerminalMode;
-import com.jediterm.terminal.TextStyle;
-import com.jediterm.terminal.model.CharBuffer;
-import com.jediterm.terminal.model.JediTerminal;
-import com.jediterm.terminal.ui.JediTermWidget;
-import com.jediterm.terminal.ui.TerminalPanel;
-import com.jediterm.terminal.model.TerminalTextBuffer;
-import com.jediterm.terminal.model.StyleState;
-import com.jediterm.terminal.TerminalColor;
-import com.jediterm.terminal.ui.settings.DefaultSettingsProvider;
-import com.intellij.openapi.wm.ToolWindow;
 import dev.gavinthomas.odyssey.ui.components.MenuBar;
+import dev.gavinthomas.odyssey.ui.components.StatusBar;
+import dev.gavinthomas.odyssey.ui.components.ToolBar;
+import dev.gavinthomas.odyssey.ui.components.ViewContainer;
+import dev.gavinthomas.odyssey.ui.util.GBC;
 
 public class MainFrame extends JFrame {
-//    public static interface MainFrameComp {}
-//    private final ToolBar _toolBar;
-    private JButton _toolBar_testButton;
-    private JediTermWidget _terminal;
-
-    private JMenuBar _mb;
     private MenuBar _menuBar;
-    private JInternalFrame jif;
-    private JFrame jdp;
-    private TerminalPanel t2;
+    private ViewContainer _viewContainer;
+    private ToolBar _toolBar;
+    private StatusBar _statusBar;
+
+    private final Init init = new Init();
+
     public MainFrame() {
-//        this._toolBar = new ToolBar();
-        this._terminal = new JediTermWidget(50, 10, new CustomSettingsProvider());
-        this.jif = new JInternalFrame("Testing", true, true, true);
-        this.jdp = new JFrame();
-        this._menuBar = new MenuBar();
-//        this._menuBar.setBounds(0, 0, 200, 100);
-//        StyleState ss = new StyleState();
-//        ss.setDefaultStyle(new TextStyle(new TerminalColor(255, 255, 255), new TerminalColor(0, 0, 0)));
-//        this.t2 = new TerminalPanel(new DefaultSettingsProvider(), new TerminalTextBuffer(50, 10, ss), ss);
-        this._mb = new JMenuBar();
-        this.setUp();
-    }
-
-    private void setUp() {
-//        this.add(_terminal);
-        this.setSize(1200, 700);
-        _terminal.setVisible(true);
-        _terminal.setEnabled(true);
-//        _terminal.close();
-        System.out.println(_terminal.getActions());
-        _terminal.setBounds(0, 0, 1000, 500);
-        Terminal t = (JediTerminal) _terminal.getTerminal();
-        TerminalPanel tp = _terminal.getTerminalPanel();
-        t.cursorDown(10);
-//        t.setAnsiConformanceLevel(1);
-//        t.writeCharacters("\033[38;2;255;0;0mABC123\033[0m");
-//        _terminal.getTerminalStarter().sendString("\033[1mllllll");
-        t.writeUnwrappedString("\nABC123");
-        t.writeCharacters("TESTING123");
-        this.add(jif);
-        this.jif.setVisible(true);
-        this.jif.setBounds(0, 0, 200, 200);
-        this.jdp.setVisible(true);
-        this.jdp.setBounds(0, 0, 200, 200);
-        this.setJMenuBar(_menuBar);
-        _menuBar.init();
+        this.setLayout(new GridBagLayout());
         this.setTitle("Odyssey");
-//        _menuBar.setVisible(true);
-//        JMenu jm = new JMenu("TEST");
-//        _mb.add(jm);
-//        jm.add(new JMenuItem("abc"));
-//        _mb.setVisible(true);
-//        new JMenuItem();
+        try {
+            this.setIconImage(new ImageIcon(new URL("https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png")).getImage());
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
 
-//        this.setJMenuBar(_menuBar);
-//        _menuBar.setVisible(true);
-//        this.revalidate();
-//        this.repaint();
+        init.menuBar();
+        init.toolBar();
+        init.viewContainer();
+        init.statusBar();
 
-//        this.add(t2);
-//        t2.setVisible(true);
-//        t2.setBounds(0, 0, 1000, 500);
-//        t2.init(new JScrollBar());
-//        t2.handleKeyEvent(new KeyEvent(t2, 1, 1, 0, 65));
-//        t2.setBlinkingCursor(true);
-//        t2.setCursor(5, 5);
-//        t2.setCursorVisible(true);
-//        t2.getTerminalTextBuffer().writeString(2, 2, new CharBuffer("\033[1mabc\033[0m"));
-//        _terminal.getTerminalStarter().sendString("abc", true);
-//        t.setModeEnabled(TerminalMode.InsertMode, true);
-//        this.add(_toolBar);
-//
-//        _toolBar.setVisible(true);
-//        _toolBar.add("test", new ToolBar.Button("ABC", new ImageIcon("https://www.google.com/logos/doodles/2022/seasonal-holidays-2022-6753651837109831.7-ladc.gif"), (objects) -> {
-//            System.out.println("abc");
-//        }));
+//        this.initL();
+//        this.setBounds(200, 200, 700, 700);
+////        this.add(_viewContainer);
+//        this.add(new JButton("TESTING A"), BorderLayout.PAGE_START);
+//        this.add(new JButton("TESTING B"), BorderLayout.CENTER);
+//        this.add(new JButton("TESTING C"), BorderLayout.PAGE_END);
+//        this.validate();
+//        pack();
     }
-    private abstract class setUp {
-        private void toolBar() {
-//            MainFrame.this._toolBar.setFloatable(false);
 
+    private void initL() {
+
+        Container p = this;
+        p.setLayout(new BorderLayout());
+
+        System.out.println(p.getLayout());
+
+        JPanel btn1 = new JPanel();
+        btn1.setBackground(new Color(255, 0, 255));
+//        btn1.setSize(500, 200);
+        btn1.setPreferredSize(new Dimension(700, 100));
+        p.add(btn1, BorderLayout.PAGE_START);
+
+        JPanel btn2 = new JPanel();
+        btn2.setBackground(new Color(255, 0, 0));
+        btn2.setPreferredSize(new Dimension(500, 500));
+//        btn2.setSize(500, 200);
+//        btn2.setMinimumSize(new Dimension(500, 200));
+//        btn2.setMaximumSize(new Dimension(500, 200));
+        p.add(btn2, BorderLayout.CENTER);
+
+
+        JPanel btn3 = new JPanel();
+        btn3.setBackground(new Color(0, 0, 255));
+//        btn3.setSize(500, 200);
+
+//        btn3.setMinimumSize(new Dimension(100, 100));
+        btn3.setPreferredSize(new Dimension(100, 500));
+        p.add(btn3, BorderLayout.LINE_START);
+
+        JPanel btn4 = new JPanel();
+        btn4.setBackground(new Color(0, 255, 0));
+//        btn4.setSize(500, 200);
+        btn4.setPreferredSize(new Dimension(100, 500));
+        p.add(btn4, BorderLayout.LINE_END);
+
+        JPanel btn5 = new JPanel();
+        btn5.setBackground(new Color(255, 255, 0));
+//        btn5.setSize(500, 200);
+        btn5.setPreferredSize(new Dimension(700, 100));
+        p.add(btn5, BorderLayout.PAGE_END);
+//        btn5.setVisible(false);
+//        p.repaint();
+//        p.revalidate();
+    }
+
+    private final class Init {
+        private MainFrame t = MainFrame.this;
+
+        private void menuBar() {
+            t._menuBar = new MenuBar();
+            t.setJMenuBar(t._menuBar);
+        }
+
+        private void toolBar() {
+            t._toolBar = new ToolBar();
+            t.add(t._toolBar, new GBC(1, 1).weight(1.0, 0.0).fill(GBC.HORIZONTAL).anchor(GBC.PAGE_START));
+        }
+
+        private void viewContainer() {
+            t._viewContainer = new ViewContainer();
+            t.add(t._viewContainer, new GBC(1, 2).weight(1.0, 1.0).fill(GBC.BOTH).anchor(GBC.CENTER));
+        }
+
+        private void statusBar() {
+            t._statusBar = new StatusBar();
+            t.add(t._statusBar, new GBC(1, 3).weight(1.0, 0.0).fill(GBC.HORIZONTAL).anchor(GBC.PAGE_END));
         }
     }
 }
 
-class ToolBar extends JToolBar {
-    private final Map<String, ToolBar.Button> btns = new HashMap<String, ToolBar.Button>();
+class ToolBarOld extends JToolBar {
+    private final Map<String, ToolBarOld.Button> btns = new HashMap<String, ToolBarOld.Button>();
 
-    public ToolBar() {
+    public ToolBarOld() {
         super.setBounds(0, 0, 1000, 500);
     }
 
-    public void add(String id, ToolBar.Button btn) {
+    public void add(String id, ToolBarOld.Button btn) {
 //        btns.
         super.add(btn);
         btns.put(id, btn);

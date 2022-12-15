@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="887dd5af-d180-4a12-8e1f-f346678ac682" name="Changes" comment="Theme setup." />
+    <list default="true" id="887dd5af-d180-4a12-8e1f-f346678ac682" name="Changes" comment="Layout.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/StatusBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/ViewContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/util/GBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/Odyssey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/Odyssey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/Editor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/MenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/MenuBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/ToolBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/ToolBar.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +28,26 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="odyssey" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,6 +59,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3e41f71d-09cd-478c-be50-90f2af75fbf6" />
+        <option name="url" value="https://github.com/gthomasdev/Odyssey.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,11 +89,12 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/dmtho/OneDrive/Documents/odyssey/libs/terminal/libs/terminal-2.69.jar",
+    "last_opened_file_path": "/home/gavin/IdeaProjects/Odyssey",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.43764988",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editor.preferences.folding"
   }
 }]]></component>
   <component name="RunManager" selected="Gradle.odyssey [run]">
@@ -148,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670894076792</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Layout.">
+      <created>1671048873388</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671048873388</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +223,14 @@
     <MESSAGE value="Figuring out ui structure." />
     <MESSAGE value="Terminal setup." />
     <MESSAGE value="Theme setup." />
-    <option name="LAST_COMMIT_MESSAGE" value="Theme setup." />
+    <MESSAGE value="Layout." />
+    <option name="LAST_COMMIT_MESSAGE" value="Layout." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/odyssey$odyssey__run_.ic" NAME="odyssey [run] Coverage Results" MODIFIED="1671135128398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

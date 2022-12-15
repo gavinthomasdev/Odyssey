@@ -14,6 +14,7 @@ public class MenuBar extends JMenuBar {
     public final Map<Menu, CustomMenu> menus;
     public MenuBar() {
         this.menus = new HashMap<Menu, CustomMenu>();
+        this.init();
 //        super.setVisible(true);
     }
 
