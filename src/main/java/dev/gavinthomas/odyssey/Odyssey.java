@@ -17,12 +17,12 @@ public class Odyssey {
         Odyssey.mainFrame = new MainFrame();
         MainFrame f = Odyssey.mainFrame;
 //        f.setBounds(200, 200, 700, 700);// 400 width and 500 height
-        f.setMinimumSize(new Dimension(400, 500));// 400 width and 500 height
+//        f.setMinimumSize(new Dimension(400, 500));// 400 width and 500 height
 //        f.setLayout(null);// using no layout managers
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);// making the frame visible
-        f.revalidate();
-        f.repaint();
+//        f.revalidate();
+//        f.repaint();
     }
     public static MainFrame getMain() {
         return Odyssey.mainFrame;

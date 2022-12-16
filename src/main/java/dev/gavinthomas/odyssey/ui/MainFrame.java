@@ -37,60 +37,9 @@ public class MainFrame extends JFrame {
         init.viewContainer();
         init.statusBar();
 
-//        this.initL();
-//        this.setBounds(200, 200, 700, 700);
-////        this.add(_viewContainer);
-//        this.add(new JButton("TESTING A"), BorderLayout.PAGE_START);
-//        this.add(new JButton("TESTING B"), BorderLayout.CENTER);
-//        this.add(new JButton("TESTING C"), BorderLayout.PAGE_END);
-//        this.validate();
-//        pack();
-    }
 
-    private void initL() {
-
-        Container p = this;
-        p.setLayout(new BorderLayout());
-
-        System.out.println(p.getLayout());
-
-        JPanel btn1 = new JPanel();
-        btn1.setBackground(new Color(255, 0, 255));
-//        btn1.setSize(500, 200);
-        btn1.setPreferredSize(new Dimension(700, 100));
-        p.add(btn1, BorderLayout.PAGE_START);
-
-        JPanel btn2 = new JPanel();
-        btn2.setBackground(new Color(255, 0, 0));
-        btn2.setPreferredSize(new Dimension(500, 500));
-//        btn2.setSize(500, 200);
-//        btn2.setMinimumSize(new Dimension(500, 200));
-//        btn2.setMaximumSize(new Dimension(500, 200));
-        p.add(btn2, BorderLayout.CENTER);
-
-
-        JPanel btn3 = new JPanel();
-        btn3.setBackground(new Color(0, 0, 255));
-//        btn3.setSize(500, 200);
-
-//        btn3.setMinimumSize(new Dimension(100, 100));
-        btn3.setPreferredSize(new Dimension(100, 500));
-        p.add(btn3, BorderLayout.LINE_START);
-
-        JPanel btn4 = new JPanel();
-        btn4.setBackground(new Color(0, 255, 0));
-//        btn4.setSize(500, 200);
-        btn4.setPreferredSize(new Dimension(100, 500));
-        p.add(btn4, BorderLayout.LINE_END);
-
-        JPanel btn5 = new JPanel();
-        btn5.setBackground(new Color(255, 255, 0));
-//        btn5.setSize(500, 200);
-        btn5.setPreferredSize(new Dimension(700, 100));
-        p.add(btn5, BorderLayout.PAGE_END);
-//        btn5.setVisible(false);
-//        p.repaint();
-//        p.revalidate();
+        this.setMinimumSize(new Dimension(400, 500));
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     private final class Init {

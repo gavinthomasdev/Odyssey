@@ -7,6 +7,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.LookAndFeel;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -25,6 +26,7 @@ public class MenuBar extends JMenuBar {
             this.add(cm);
             menus.put(m, cm);
         }
+        this.setPreferredSize(new Dimension(0, 30));
 //        this.setBackground(new Color(14, 17, 24));
 //        this.setForeground(new Color(255, 255, 255));
     }

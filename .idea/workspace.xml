@@ -8,16 +8,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="887dd5af-d180-4a12-8e1f-f346678ac682" name="Changes" comment="Layout.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/StatusBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/ViewContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/util/GBC.java" afterDir="false" />
+    <list default="true" id="887dd5af-d180-4a12-8e1f-f346678ac682" name="Changes" comment="Layout">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/Dock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/ViewPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/WindowToolBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/views/BottomView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/views/CenterView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/views/LeftView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/views/RightView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/views/TopView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/util/DimPercent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/util/components/RotatedButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/Odyssey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/Odyssey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/Editor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/MenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/MenuBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/StatusBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/StatusBar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/ToolBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/ToolBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/ViewContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/gavinthomas/odyssey/ui/components/ViewContainer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +105,11 @@
     "settings.editor.selected.configurable": "editor.preferences.folding"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="dev.gavinthomas.odyssey.ui.components" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.odyssey [run]">
     <configuration name="odyssey [build]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
@@ -203,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671048873388</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Layout">
+      <created>1671144639682</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671144639682</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,7 +244,8 @@
     <MESSAGE value="Terminal setup." />
     <MESSAGE value="Theme setup." />
     <MESSAGE value="Layout." />
-    <option name="LAST_COMMIT_MESSAGE" value="Layout." />
+    <MESSAGE value="Layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Layout" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

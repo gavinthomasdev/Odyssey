@@ -10,7 +10,7 @@ public class StatusBar extends JToolBar {
   }
   private void init() {
     this.setBackground(new Color(0, 0, 255));
-    this.setPreferredSize(new Dimension(1, 20));
+    this.setPreferredSize(new Dimension(0, 20));
 //    this.setSize(1, 40);
   }
 }
