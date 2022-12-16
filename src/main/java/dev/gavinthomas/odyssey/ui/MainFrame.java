@@ -40,6 +40,7 @@ public class MainFrame extends JFrame {
 
         this.setMinimumSize(new Dimension(400, 500));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.pack();
     }
 
     private final class Init {
