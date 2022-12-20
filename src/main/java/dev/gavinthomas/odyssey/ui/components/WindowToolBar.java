@@ -12,16 +12,16 @@ import java.awt.FlowLayout;
 public class WindowToolBar extends JPanel {
   public WindowToolBar(Direction dir) {
 //    this.setOrientation(dir.rotation == 0 ? 0 : 1);
-    this.setPreferredSize((dir.rotation == 0 ? new Dimension(0, 60) : new Dimension(60, 0)));
+    this.setPreferredSize((dir.rotation == 0 ? new Dimension(0, 20) : new Dimension(20, 0)));
     this.setBackground(new Color(0, 0, 0));
 //    JButton btn = new JButton("TESTING");
 //    this.setLayout(new FlowLayout(FlowLayout.LEFT));
 //    btn.
 
 //    this.add(btn);
-    RotatedButton btn2 = new RotatedButton("TESTING", dir.rotation);
-    this.add(btn2);
-    btn2.setSize(dir.rotation == 0 ? new Dimension(150, 30) : new Dimension(30, 150));
+//    RotatedButton btn2 = new RotatedButton("TESTING", dir.rotation);
+//    this.add(btn2);
+//    btn2.setSize(dir.rotation == 0 ? new Dimension(150, 30) : new Dimension(30, 150));
 //    System.out.println(btn2.getPreferredSize().width + ", " + btn2.getPreferredSize().height);
 //    this.revalidate();
 

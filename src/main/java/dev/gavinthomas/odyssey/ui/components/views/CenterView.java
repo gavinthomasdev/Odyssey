@@ -1,4 +1,7 @@
 package dev.gavinthomas.odyssey.ui.components.views;
 
-public class CenterView {
+import javax.swing.JPanel;
+
+public class CenterView extends JPanel {
+
 }
